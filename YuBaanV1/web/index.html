@@ -8,9 +8,275 @@ and open the template in the editor.
     <head>
         <title>แจ้งซ่อมอุปกรณ์ในคณะไอที</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+
+
+        <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+        <link href="content/fonts/icomoon/style.css" rel="stylesheet" type="text/css"/>
+        <link href="content/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="content/css/jquery-ui.css" rel="stylesheet" type="text/css"/>
+        <link href="content/css/owl.theme.default.min.css" rel="stylesheet" type="text/css"/>
+        <link href="content/css/owl.carousel.min.css" rel="stylesheet" type="text/css"/>
+        <link href="content/css/jquery.fancybox.min.css" rel="stylesheet" type="text/css"/>
+        <link href="content/css/bootstrap-datepicker.css" rel="stylesheet" type="text/css"/>
+        <link href="content/fonts/flaticon/font/flaticon.css" rel="stylesheet" type="text/css"/>
+        <link href="content/css/aos.css" rel="stylesheet" type="text/css"/>
+        <link href="content/css/style.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+    <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+        <div class="site-wrap">
+
+            <div class="site-mobile-menu site-navbar-target">
+                <div class="site-mobile-menu-header">
+                    <div class="site-mobile-menu-close mt-3">
+                        <span class="icon-close2 js-menu-toggle"></span>
+                    </div>
+                </div>
+                <div class="site-mobile-menu-body"></div>
+            </div>
+
+
+            <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+
+                <div class="container-fluid">
+                    <div class="d-flex align-items-center">
+                        <div class="site-logo"><a href="index.html">Amplify</a></div>
+                        <div>
+                            <nav class="site-navigation position-relative text-right" role="navigation">
+                                <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                                    <li><a href="#home-section" class="nav-link">Home</a></li>
+                                    <li><a href="#work-section" class="nav-link">Work</a></li>
+                                    <li><a href="#process-section" class="nav-link">Process</a></li>
+                                    <li><a href="#services-section" class="nav-link">Services</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="ml-auto">
+                            <nav class="site-navigation position-relative text-right" role="navigation">
+                                <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block">
+                                    <li class="cta"><a href="#contact-section" class="nav-link"><span class="rounded border border-primary">Contact</span></a></li>
+                                </ul>
+                            </nav>
+                            <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+
+            <div class="intro-section">
+            </div>
+
+
+            <div class="site-section section-1 " id="home-section">
+
+
+                <div class="container" >
+                    <div class="row">
+                        <div class="col-lg-8 mr-auto mb-5">
+
+                            <div class="mb-5">
+                                <span class="section-sub-title d-block">By Yu-Baan</span>
+                                <h2 class="section-title">แจ้งอุปกรณ์ชำรุด</h2>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12">
+
+                                    <div class="counter d-flex align-items-start mb-4" data-aos="fade-up" data-aos-delay="">
+                                        <div class="form-group row">
+                                            <div class="text-dark col-5 text-right"><p>สถานที่ :</p></div>
+                                             <div class="col-7 text-left">
+                                            <select class="selectpicker" id="ddlLocation">
+                                                <option>Male</option>
+                                                <option>Female</option>
+                                            </select>
+                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-lg-12">
+                                <div class="counter d-flex align-items-start mb-4" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="form-group row">
+                                            <div class="text-dark col-5 text-right"><p>ชื่ออุปกรณ์ :</p></div>
+                                             <div class="col-7 text-left">
+                                            <select class="selectpicker" id="ddlLocation">
+                                                <option>Male</option>
+                                                <option>Female</option>
+                                            </select>
+                                             </div>
+                                        </div>
+                                </div>
+
+                            </div>
+                                </div>
+                            <div class="row">
+                            <div class="col-lg-12">
+
+                                <div class="counter d-flex align-items-start mb-4" data-aos="fade-up" data-aos-delay="200">
+                                   <div class="form-group row">
+                                       <div class="text-dark col-5 text-right"><p>รหัสอุปกรณ์ :</p></div>
+                                       <div class="col-7 text-left">
+                                            <select class="selectpicker" id="ddlLocation">
+                                                <option>Male</option>
+                                                <option>Female</option>
+                                            </select>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                                </div>
+                            <div class="row">
+                            <div class="col-lg-12">
+                                <div class="counter d-flex align-items-start mb-4" data-aos="fade-up" data-aos-delay="300">
+                                    <div class="form-group row">
+                                            <div class="text-dark col-5 text-right"><p>สาเหตุ</p></div>
+                                             <div class="col-7 text-left">
+                                            <select class="selectpicker" id="ddlLocation">
+                                                <option>Male</option>
+                                                <option>Female</option>
+                                            </select>
+                                             </div>
+                                        </div>
+                                </div>
+
+                            </div>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="image-absolute-box" >
+                            <img src="content/images/about_1.jpg" alt="Image" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="site-section bg-light" id="services-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mb-5">
+                        <span class="section-sub-title d-block">Services</span>
+                        <h2 class="section-title">Services</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="site-section" id="contact-section">
+            <div class="container">
+
+                <div class="row justify-content-center">
+                    <div class="col-md-7">
+
+
+
+                        <h2 class="section-title mb-3">Message Us</h2>
+
+                        <form method="post" data-aos="fade">
+
+
+                            <div class="form-group row">
+                                <div class="col-md-6">
+
+                                    <input type="submit" class="btn btn-primary py-3 px-5 btn-block" value="Send Message">
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>About Amplify</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro consectetur ut hic ipsum et veritatis corrupti. Itaque eius soluta optio dolorum temporibus in, atque, quos fugit sunt sit quaerat dicta.</p>
+                    </div>
+
+                    <div class="col-md-3 ml-auto">
+                        <h3>Links</h3>
+                        <ul class="list-unstyled footer-links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Work</a></li>
+                            <li><a href="#">Process</a></li>
+                            <li><a href="#">Services</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h3>Subscribe</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt incidunt iure iusto architecto? Numquam, natus?</p>
+                        <form action="#">
+                            <div class="d-flex mb-5">
+                                <input type="text" class="form-control rounded-0" placeholder="Email">
+                                <input type="submit" class="btn btn-primary rounded-0" value="Subscribe">
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="row pt-5 mt-5 text-center">
+                    <div class="col-md-12">
+                        <div class="border-top pt-5">
+                            <p>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+
+
+    </div>
+
+    <script src="content/js/jquery-3.3.1.min.js"></script>
+    <script src="content/js/jquery-migrate-3.0.1.min.js" type="text/javascript"></script>
+    <script src="content/js/jquery-ui.js"></script>
+    <script src="content/js/popper.min.js"></script>
+    <script src="content/js/bootstrap.min.js"></script>
+    <script src="content/js/owl.carousel.min.js"></script>
+    <script src="content/js/jquery.stellar.min.js"></script>
+    <script src="content/js/jquery.countdown.min.js"></script>
+    <script src="content/js/bootstrap-datepicker.min.js"></script>
+    <script src="content/js/jquery.easing.1.3.js"></script>
+    <script src="content/js/aos.js"></script>
+    <script src="content/js/jquery.fancybox.min.js"></script>
+    <script src="content/js/jquery.sticky.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/i18n/defaults-*.min.js"></script>
+
+    <script src="content/js/main.js"></script>
+
+    <script type="text/javascript">
+                                    $(document).ready(function () {
+                                        $('#ddlLocation').selectpicker();
+                                    });
+    </script>
+</body>
 </html>
